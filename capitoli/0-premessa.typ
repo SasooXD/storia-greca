@@ -25,8 +25,8 @@ note.
 
 Questo documento è stato creato con #link("https://typst.app")[Typst] 0.15.1. Una versione completa
 viene pubblicata dopo ogni aggiornamento all'indirizzo
-#link("https://sasoo.neocities.org/appunti/storia-greca"). Per chi è interessato, i sorgenti sono
-disponibili all'indirizzo #link("https://github.com/SasooXD/storia-greca"). Ogni richiesta di
+#link("https://sasoo.neocities.org/appunti/storia-greca.html"). Per chi è interessato, i sorgenti
+sono disponibili all'indirizzo #link("https://github.com/SasooXD/storia-greca"). Ogni richiesta di
 modifica, correzione di errori, precisazioni e altro è ben accetta: all'indirizzo precedente è
 presente una breve guida per la collaborazione. Altrimenti, sentitevi liberi di
 #link("mailto:m.bertolino.m@gmail.com")[contattarmi].
