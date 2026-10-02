@@ -1,0 +1,10 @@
+bearzot:
+  type: book
+  title: "Manuale di storia greca"
+  author: ["Bearzot, Cinzia"]
+  date: 2015
+  publisher:
+    name: il Mulino
+    location: Bologna
+  language: it
+  isbn: 978-88-15-25882-3
