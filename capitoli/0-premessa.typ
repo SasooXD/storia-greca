@@ -23,7 +23,7 @@ distribuito assieme a questo documento e comunque disponibile
 altri elementi di terzi restano soggetti alle rispettive licenze, indicate nelle didascalie e nelle
 note.
 
-Questo documento è stato creato con #link("https://typst.app")[Typst] 0.15.1. Una versione completa
+Questo documento è stato creato con #link("https://typst.app/")[Typst] 0.15.1. Una versione completa
 viene pubblicata dopo ogni aggiornamento all'indirizzo
 #link("https://sasoo.neocities.org/appunti/storia-greca.html"). Per chi è interessato, i sorgenti
 sono disponibili all'indirizzo #link("https://github.com/SasooXD/storia-greca"). Ogni richiesta di
