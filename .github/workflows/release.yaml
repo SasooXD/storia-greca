@@ -1,0 +1,37 @@
+name: Compila e pubblica i PDF
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: 0.15.1
+
+      - name: Installa i font
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-core
+          typst fonts | grep -q "Noto Serif"
+
+      - name: Compila il PDF standard (PDF-2)
+        run: typst compile --pdf-standard 2.0 main.typ storia-greca.pdf
+
+      - name: Compila il PDF accessibile (PDF/UA-1)
+        run: typst compile --pdf-standard ua-1 main.typ storia-greca-ua-1.pdf
+
+      - name: Pubblica la release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" storia-greca.pdf storia-greca-ua-1.pdf --title "$GITHUB_REF_NAME" --generate-notes
