@@ -2,8 +2,8 @@ name: Compila e pubblica i PDF
 
 on:
   push:
-    branches: [main]
     tags: ["v*"]
+  workflow_dispatch:
 
 permissions:
   contents: write
